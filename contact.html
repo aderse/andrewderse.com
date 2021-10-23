@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" Content-Type="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/default.css">
+
+    <title>Andrew Derse | Contact</title>
+
+</head>
+<body>
+    <header class="mb-5">
+        <h1 class="text-center p-5">Andrew Derse</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/reading-list">Reading List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section id="sub-header">
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-12 text-center p-5">
+                    <h2>Contact Me</h2>
+                    <p><a href="tel:6084087169">(608) 408-7169</a> - <a href="mailto:andrew.derse@madcitycoders.com">andrew.derse@madcitycoders.com</a></p>
+                    <p>521 S Park Street, Reedsburg, WI 53959</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Tell me about your project</h2>
+                    <p>I love to help people!</p>
+                    <p>If you are like most people, you have at least one brilliant idea, but you don't know how to get that idea out of your head and turn it into a website. You may feel weighed down with the idea of building a website or focusing on something that is not your strong suit.</p>
+                    <p>No worries, tell me about your project and I will help make that a reality. Help take the stress out of our project and focus on what really matters the most to you.</p>
+                    <p>Have a website developed years ago and need to make it responsive or more "up to date"? Perfect, I can help with that!</p>
+                    <p>I look forward to working with you!</p>
+                </div>
+                <div class="col-6">
+                    <form id="contact-form" method="post">
+                        <h4>Name:</h4>
+                        <input type="text" style="height:35px;" id="name-input" placeholder="Enter name here…" class="form-control" style="width:100%;" /><br/>
+                        <h4>Email:</h4>
+                        <input type="email" style="height:35px;" id="email-input" placeholder="Enter email here…" class="form-control" style="width:100%;"/><br/>
+                        <h4>How can we help you?</h4>
+                        <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;"></textarea><br/>
+                        <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
+                        <button type="button" onClick="submitToAPI(event)" class="btn btn-lg contact-btn" style="margin-top:20px;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    &copy; Copyright 2019 - Andrew Derse - All Rights Reserved
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/resume">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/reading-list">Reading List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm text-right">
+                    <a class="mr-3"href="https://www.facebook.com/andrew.derse.7"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/andrew-derse-56692235/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <script
+                src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            function submitToAPI(e) {
+                e.preventDefault();
+                var URL = "https://1950ggwx8e.execute-api.us-east-1.amazonaws.com/Prod/contact-us";
+
+                var Namere = /[A-Za-z]{1}[A-Za-z]/;
+                if (!Namere.test($("#name-input").val())) {
+                    alert ("Name can not less than 2 char");
+                    return;
+                }
+                if ($("#email-input").val()=="") {
+                    alert ("Please enter your email id");
+                    return;
+                }
+
+                var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+                if (!reeamil.test($("#email-input").val())) {
+                    alert ("Please enter valid email address");
+                    return;
+                }
+
+                var name = $("#name-input").val();
+                var phone = $("#phone-input").val();
+                var email = $("#email-input").val();
+                var desc = $("#description-input").val();
+                var data = {
+                    name : name,
+                    phone : phone,
+                    email : email,
+                    desc : desc
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url : "https://1950ggwx8e.execute-api.us-east-1.amazonaws.com/Prod/contact-us",
+                    dataType: "json",
+                    crossDomain: "true",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(data),
+
+
+                    success: function () {
+                        // clear form and show a success message
+                        alert("Successfull");
+                        document.getElementById("contact-form").reset();
+                        location.reload();
+                    },
+                    error: function () {
+                        // show an error message
+                        alert("UnSuccessfull");
+                    }});
+            }
+        </script>
+    </footer>
+</body>
+</html>

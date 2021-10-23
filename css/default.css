@@ -1,0 +1,132 @@
+body {
+    color: #638ba5;
+}
+
+nav a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#sub-header {
+    background: #638ba5;
+    color: #fff;
+}
+
+#sub-header a {
+    color: #fff;
+}
+
+#home-banner {
+    height: 550px;
+    background-image: url(/assets/andrewderse-homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inner-wrap {
+    padding: 45px 20px;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#left-floater {
+    max-width: 500px;
+    background-color: rgba(29,39,49,0.8);
+    float: left;
+    display: block;
+    padding: 45px;
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-white {
+    color: #fff;
+}
+
+div#left-floater h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 25px;
+}
+
+.fa.fa-heartbeat {
+    font-size: 75px;
+    margin-bottom: 25px;
+}
+
+#home-stats blockquote p {
+    font-size: 36px;
+}
+
+#home-sub-banner {
+    height: 550px;
+    background-image: linear-gradient(rgba(29,39,49,0.71),rgba(29,39,49,0.71)),url(/assets/andrewderse-homepage-stones.jpg);
+    background-size: cover;
+    background-position: 0% -500px;
+    position: relative;
+}
+
+#home-sub-banner h2 {
+    font-size: 72px;
+    position: absolute;
+    top: 40%;
+    width: 100%
+}
+
+#resume a {
+    color: #638ba5;
+}
+
+.skills button {
+    background: #638ba5;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.company-name {
+    font-weight: 200;
+}
+
+footer.footer {
+    padding: 5rem;
+    background: #638ba5;
+    color: #fff;
+}
+
+footer.footer a {
+    color: #fff;
+}
+
+button.btn.btn-lg.contact-btn {
+    border: 2px solid #638ba5;
+    color: #638ba5;
+}
+
+button.btn.btn-lg.contact-btn:hover {
+    background: #638ba5;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    #home-banner {
+        background-position: -79px 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home-banner {
+        background-position: 0% 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    #home-banner {
+        background-position: 0% -100px;
+    }
+}
