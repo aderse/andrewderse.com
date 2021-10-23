@@ -1,7 +1,7 @@
 # Welcome To My Website
 
 This website was made with pure HTML, CSS, and JavaScript.
-Nothing fancy, just a simple site to help others learn a bit more about me.
+Nothing fancy, just a simple site to help others learn a bit more about me. https://andrewderse.com/
 
 ## Hosting
 
